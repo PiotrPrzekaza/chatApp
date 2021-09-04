@@ -18,3 +18,13 @@
     max-width: 40%;
   }
 }
+
+.btn {
+  background: #bc49f1;
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+.btn:focus {
+  outline: none;
+}
