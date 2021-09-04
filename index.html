@@ -12,9 +12,47 @@
 </head>
 
 <body>
-    <script src="js/chatData.js"></script>
-    <script src="js/views.js"></script>
-    <script src="js/mainApp.js"></script>
+    <main class="container my-4">
+        <h1 class="my-4 text-center">ChatME</h1>
+        <header class="chat-rooms mb-3 text-center">
+            <div class="my-2">Choose a chatroom:</div>
+            <button class="btn" id="general">#general</button>
+            <button class="btn" id="music">#music</button>
+            <button class="btn" id="games">#games</button>
+            <button class="btn" id="podcasts">#podcasts</button>
+        </header>
+        <section class="chat-window">
+            <ul class="chat-list list-group"></ul>
+        </section>
+        <section class="chat-forms">
+            <form class="new-chat my-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Your message:</div>
+                    </div>
+                    <input type="text" id="message" class="form-control" required>
+                    <div class="input-group-append">
+                        <input type="submit" class="btn" value="send">
+                    </div>
+                </div>
+            </form>
+            <form class="new-name my-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">Update name:</div>
+                    </div>
+                    <input type="text" id="name" class="form-control" required>
+                    <div class="input-group-append">
+                        <input type="submit" class="btn" value="update">
+                    </div>
+                </div>
+                <div class="update-mssg"></div>
+            </form>
+        </section>
+        <main />
+        <script src="js/chatData.js"></script>
+        <script src="js/views.js"></script>
+        <script src="js/mainApp.js"></script>
 </body>
 
 </html>
