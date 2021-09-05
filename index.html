@@ -50,6 +50,26 @@
             </form>
         </section>
         <main />
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-analytics.js";
+            import { getFirestore } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-firestore.js";
+
+            const firebaseConfig = {
+              apiKey: "AIzaSyC3fINbHLGIdqbN89q6repVAVMge5znrfw",
+              authDomain: "chatme-3a2f1.firebaseapp.com",
+              projectId: "chatme-3a2f1",
+              storageBucket: "chatme-3a2f1.appspot.com",
+              messagingSenderId: "775233771304",
+              appId: "1:775233771304:web:f517a38ed8c6133e86621d",
+              measurementId: "G-QQR1CQ3Q8V"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+            const db = getFirestore();
+          </script>
         <script src="js/chatData.js"></script>
         <script src="js/views.js"></script>
         <script src="js/mainApp.js"></script>
